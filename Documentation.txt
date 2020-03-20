@@ -1,0 +1,24 @@
+Install
+    Nodejs
+    yarn
+    express
+    nodemon
+        - configurar pack.json (scrips: dev nodemon src/main/index.js)
+    sucrase
+        - configurar arquivo na raiz (nodemon.json - execMap js: node -r sucrase/register)
+    eslint
+        - eslin --init para configurar o arquivo do eslint
+        - após configurar remover o package-lock.json e executar o yarn para mapear as dependencias novamente
+        - instalar extenção eslint
+        -configura os rules: {
+                                "class-methods-use-this": "off",
+                                "no-param-reassingn": "off",
+                                "camelcase": "off",
+                                "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
+                             },
+        - add prettier eslint-config-prettier eslint-plugin-prettier
+        -alterar airbnb para airbnb-base
+        - configurar prettier no .eslintrc.js
+        Rodar o eslint yarn eslint --fix scr --ext .js
+    editorconfig
+        instalar o plug do editorcongig
